@@ -1,0 +1,113 @@
+html {
+  font-size: 62.5%;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+body {
+  font-family: Monterserat, Arial, Helvetica, sans-serif;
+  background: hsl(30, 38%, 92%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: #92929a;
+}
+.container {
+  margin: 2rem;
+  background-color: #fff;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 15px;
+  overflow: hidden;
+}
+header > img {
+  outline: none;
+
+  width: 100%;
+}
+
+footer {
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.outline-tag {
+  padding-left: 0.5rem;
+
+  font-size: 1.5rem;
+  letter-spacing: 7px;
+}
+h1 {
+  color: #222;
+  line-height: 1;
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+.description {
+  display: flex;
+  padding: 1rem 0;
+  font-size: 1.5rem;
+  margin-top: 0;
+}
+.price {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.price__displayprice {
+  font-family: Fraunces, Arial, Helvetica, sans-serif;
+  margin: 0;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #417f6a;
+}
+.price__sellprice {
+  padding-left: 2rem;
+  float: left;
+  font-size: 1.2rem;
+  text-decoration: line-through;
+}
+.btn {
+  border: none;
+  padding: 1.5rem 2.5rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  background-color: #417f6a;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.7rem;
+}
+.btn__icon {
+  margin-right: 1rem;
+}
+@media screen and (min-width: 1440px) {
+  header > img.perfume-mobile {
+    display: none; /* Hide the default image on wider screens */
+  }
+
+  header > img.perfume-desktop {
+    display: block; /* Show the desktop image on wider screens */
+  }
+  .container {
+    width: 60rem;
+    margin: 2rem 4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 45rem;
+  }
+  .outline-tag {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+  .price__displayprice {
+    margin-bottom: 1.5rem;
+  }
+}
